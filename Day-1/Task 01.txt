@@ -1,0 +1,25 @@
+1)Difference betwwen HTTP 1.1 and HTTP2
+
+HTTP1.1:-
+	->The first usable version of HTTP was created in 1997. 
+	->Because it went through several stages of development. 
+	->This first version of HTTP was called HTTP/1.1. 
+	->This version is still in use on the web.
+
+HTTP2:-
+	->In 2015, a new version of HTTP called HTTP/2 was created. 
+	->HTTP/2 solves several problems that the creators of HTTP/1.1 did not anticipate.
+	-> In particular, HTTP/2 is much faster and more efficient than HTTP/1.1.
+	-> One of the ways in which HTTP/2 is faster is in how it prioritizes content during the loading process.
+
+2)Write a blog about objects and its internal representation in Javascript
+					
+				Objects	
+	Objects, in JavaScript, is it’s most important data-type and forms the building blocks for modern JavaScript.
+	These objects are quite different from JavaScript’s primitive data-types,
+	eg:(Number, String, Boolean, null, undefined and symbol) 
+ 	these primitive data-types all store a single value each (depending on their types).
+	The syntax is 			
+			objectName.propertyName		
+	It having a keyvalue pair
+	name (key) : "Abarnaa"(value pair)
