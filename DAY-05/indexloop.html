@@ -1,0 +1,44 @@
+//for loop
+const cars = ["BMW", "Volvo", "Saab", "Ford", "Fiat", "Audi"];
+
+let text = "";
+for (let i = 0; i < cars.length; i++) {
+  text += cars[i] + "<br>";
+}
+
+console.log(cars);
+
+
+
+
+//forin
+
+const cars = ["BMW", "Volvo", "Saab", "Ford"];
+let text = "";
+for (let x in cars) {
+  text += cars[x] + " ";
+}
+console.log(cars)
+
+
+//forEach
+
+const students = ['John', 'Sara', 'Jack'];
+
+students.forEach(element => {
+  console.log(element);
+});
+
+
+//forof
+
+
+// array
+const students = ['John', 'Sara', 'Jack'];
+
+// using for...of
+for ( let element of students ) {
+
+    // display the values
+    console.log(element);
+}
