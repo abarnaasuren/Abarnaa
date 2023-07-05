@@ -1,0 +1,59 @@
+
+class Movie{
+    constructor(title,studio,rating){
+        this.setMovie(title,studio,rating);
+        this.setMovie1(title,studio,rating);
+        this.setMovie2(title,studio,rating);
+    }
+    setMovie(title,studio,rating)
+     {
+        this.title=title;
+        this.studio=studio;
+        if(rating =="")
+        this.rating='PG';
+        else
+        this.rating=rating;
+     }
+
+    setMovie1(title,studio,rating)
+    {
+        this.title=title;
+        this.studio=studio;
+        if(rating =="")
+        this.rating='PG';
+        else
+        this.rating=rating; 
+    }
+
+    setMovie2(title,studio,rating)
+    {
+        this.title=title;
+        this.studio=studio;
+        if(rating =="")
+        this.rating='PG';
+        else
+        this.rating=rating;
+    }
+
+    getPG()
+    {
+        return `Movie:${this.title}   Studio:${this.studio}   Rating:${this.rating}`;
+        //return this.studio;
+        //return this.rating;
+    }
+
+}
+M1=new Movie();
+M1.setMovie("Casino Royale","Eon Production","PG13");
+console.log(M1.getPG());
+M1.setMovie1("Diago Unchained","WB Production","");
+console.log(M1.getPG());
+M1.setMovie2("Shutter Island","AI1 Production","PG15");
+console.log(M1.getPG());
+
+
+		//OUTPUT
+
+//Movie:Casino Royale   Studio:Eon Production   Rating:PG13
+//Movie:Diago Unchained   Studio:WB Production   Rating:PG
+//Movie:Shutter Island   Studio:AI1 Production   Rating:PG15

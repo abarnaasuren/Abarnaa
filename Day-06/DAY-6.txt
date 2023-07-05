@@ -1,0 +1,35 @@
+class Person{
+    constructor(name,age,desegnition,email,phn,address,pincode){
+        this.name=name;
+        this.age=age;
+        this.desegnition=desegnition;
+        this.email=email;
+        this.phn=phn;
+        this.address=address;
+        this.pincode=pincode;
+    }
+    toString(){
+        return `Details:-
+               Name:${this.name}
+               Age:${this.age}
+               Desgnition:${this.desegnition}
+               E-mail:${this.email}
+               Phone:${this.phn}
+               Address:${this.address}
+               Pincode:${this.pincode}`
+    }
+}
+
+p=new Person("Abarnaa",26,"Full-stack Developer","abarna.balakrishanan@gmail.com",9626146500,"1/8,CBI Colony, velacherry, Chennai", 600002);
+console.log(p.toString());
+
+//output
+
+//Details:-
+              // Name:Abarnaa
+               //Age:26
+               //Desgnition:Full-stack Developer
+               //E-mail:abarna.balakrishanan@gmail.com
+               //Phone:9626146500
+               //Address:1/8,CBI Colony, velacherry, Chennai
+               //Pincode:600002

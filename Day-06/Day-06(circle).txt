@@ -1,0 +1,61 @@
+//Convert the UML diagram to Typescript class. - use number for double
+
+//-radius:double = 1.0
+//-color:String = "red"
+//+Circle()
+//+Circle(radius:double)
+//+Circle (radius: double, color: String)
+//+getRadius(): double
+//+setRadius (radius:double):void
+//+getColor(): String                                 
+//+setColor(color:String):void o----------------------"Circle[radius=?,color=?]"
+//+toString(): String                                 
+//+getArea(): double
+
+//My code:
+//-----------------------
+class Circle{
+    
+  setRadius(radius){
+    this.radius=radius;
+  }
+  getRadius(){
+  return `radius=${this.radius}`;
+  }
+    
+  setColor(color){
+  this.color=color;
+}
+
+  getColor(){
+    return `color=${this.color}`;
+  }
+
+  toString(){
+    return `circle[radius=${this.radius},color=${this.color}]`;
+  }
+
+  getArea(){
+    return (3.14)*(this.radius*this.radius);
+  }
+
+  getCircumference(){
+    return 2*(3.14)*this.radius;
+  }
+}
+c=new Circle();
+c.setRadius(4);
+console.log(c.getRadius());
+c.setColor('red');
+console.log(c.getColor());
+console.log(c.toString());
+console.log(c.getArea());
+console.log(c.getCircumference());
+//----------------------------------
+
+//Output:
+//radius=4
+//color=red
+//circle[radius=4,color=red]
+//50.24
+//25.12
