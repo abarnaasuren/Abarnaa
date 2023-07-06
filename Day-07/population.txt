@@ -1,0 +1,24 @@
+//Print the total population of countries using reduce function
+
+var xhr = new XMLHttpRequest;
+xhr.open('GET', 'https://restcountries.com/v3.1/all');
+xhr.responseType = 'json';
+xhr.send();
+
+xhr.onload = function()
+{
+    var responseObj = xhr.response;
+    var res = responseObj.map(function(item)
+    {
+        return item.population
+
+    })
+    var tpop = res.reduce(function(item1,item2)
+    {
+
+        return item1 + item2;
+
+    })
+
+    console.log(tpop)
+};

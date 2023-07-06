@@ -1,0 +1,23 @@
+// Get all the countries from the Asia continent /region using the Filter function
+
+var xhr = new XMLHttpRequest;
+xhr.open('GET', 'https://restcountries.com/v3.1/all');
+xhr.responseType = 'json';
+xhr.send();
+xhr.onload = function()
+{
+    var responseObj = xhr.response;
+
+    var cont = responseObj.filter(function(item)
+    {
+        return item.continents == 'Asia';
+    })
+
+    var country = cont.map(function(item1)
+    {
+        return item1.name.common;
+    })
+
+    console.log(country);
+    
+}
