@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <script src="./day7.js"> </script>
+  <script>
+    var xhr = new XMLHttpRequest;
+xhr.open('GET', 'https://restcountries.com/v3.1/all');
+xhr.responseType = 'json';
+xhr.send();
+xhr.onload = function()
+{
+    var responseObj = xhr.response;
+
+    var cont = responseObj.filter(function(item)
+    {
+        return item.continents == 'Asia';
+    })
+
+    var country = cont.map(function(item1)
+    {
+        return item1.name.common;
+    })
+
+    console.log(country);
+    
+}
+
+
+  </script>
+</body>
+</html>
